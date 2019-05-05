@@ -1,0 +1,12 @@
+# this datasource not actually used, 
+# all needed things from datasource is mocked by MOKITO
+spring:
+  datasource:
+    url: jdbc:h2:mem:DBNAME;MODE=MySQL
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+
+flyway:
+  enabled: false
