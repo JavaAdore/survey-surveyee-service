@@ -126,7 +126,7 @@ public class SurveyeeServiceBean  implements SurveyeeService    {
 
 	@Override
 	public void populateSurveyResult(SurveyMetaData surveyMetaData) {
-		List<SurveyeeVersionQuestionChoicesAnswersCountEntity> records=	jpaSurveyeeVersionQuestionChoicesAnswersCountDao.getSurveyRecords(surveyMetaData.getSurveyId(),surveyMetaData.getSurveyId());	
+		List<SurveyeeVersionQuestionChoicesAnswersCountEntity> records=	jpaSurveyeeVersionQuestionChoicesAnswersCountDao.getSurveyRecords(surveyMetaData.getSurveyId(),surveyMetaData.getSurveyVersion());	
 		if(!records.isEmpty())
 		{
 			Long tempQuestionId= -1l;
